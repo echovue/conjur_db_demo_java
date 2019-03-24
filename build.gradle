@@ -19,6 +19,7 @@ bootJar {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 group = 'com.echovue'
@@ -31,6 +32,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('net.conjur.api:conjur-api:2.1.0')
 	compile('mysql:mysql-connector-java')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
